@@ -120,3 +120,41 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Neumorphic Effects */
+.neumorphic-card {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  box-shadow: 8px 8px 16px #151515,
+              -8px -8px 16px #353535;
+}
+
+.neumorphic-button {
+  background: linear-gradient(145deg, #1e1e1e, #282828);
+  box-shadow: 5px 5px 10px #161616,
+              -5px -5px 10px #363636;
+  transition: all 0.3s ease;
+}
+
+.neumorphic-button:active {
+  background: linear-gradient(145deg, #282828, #1e1e1e);
+  box-shadow: inset 5px 5px 10px #161616,
+              inset -5px -5px 10px #363636;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
